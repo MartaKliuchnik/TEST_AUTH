@@ -12,12 +12,3 @@ const rootReducer = combineReducers({
 })
 
 export const store = createStore(rootReducer, applyMiddleware(thunk));
-
-// export const store = configureStore({
-//     reducer: {
-        
-        
-//     },
-//     middleware: (getDefaultMiddleware) => getDefaultMiddleware().concat(...(process.env.NODE_ENV !== 'production' ? [logger] : [])),
-// })
-
